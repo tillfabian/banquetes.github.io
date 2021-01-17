@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Banquetes Fabcas</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Bootstrap CSS-->
+    <link href="asset/bootstrap_4.5.3/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+    <!-- Font Awesome CSS-->
+    <link href="asset/fontawesome_5.15/css/all.min.css" rel="stylesheet" type="text/css" >
+    <!-- CSS ANIMATE-->
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css" >
+    <!-- CSS CUSTOMIZADO-->
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" >
+</head>
+<body class="paginas-internas">
+    <section class="bienvenidos">
+        <header id="encabezado" class="encabezado navbar fixed-top" role="banner">
+            <div class="container">
+                <a href="index.php" class="logo">
+                    <img src="images/logo.svg" alt="Logo del sitio" >
+                </a>
+                <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <form action="#" id="bloque-buscar" class="collapse">
+                    <div class="contenedor-bloque-buscar">
+                        <input type="text" placeholder="Buscar...">
+                        <input type="submit" value="Buscar">
+                    </div>
+                </form>
+                <nav id="menu-principal" class="collapse">
+                    <ul>
+                        <li ><a href="index.php">Inicio</a></li>
+                        <li ><a href="nosotros.php">Nosotros</a></li>
+                        <li ><a href="servicios.php">Servicios</a></li>
+                        <li class="active"><a href="contacto.php">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="texto-encabezado text-center">
+            <div class="container">
+                <h1 class="display-4 animate__animated animate__flipInX animate__slow">Contáctanos</h1>
+                <p class="animate__animated animate__flipInX animate__slow">Estamos listos para ayudarte</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ruta py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-right">
+                    <a href="index.php">Inicio</a> » Contacto
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="py-2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <h2 class="m-b-3">Formulario de contacto</h2>
+                    <form action="#">
+                        <div class="form-group row">
+                            <label for="nombre" class="col-sm-3 col-form-label text-sm-right">Nombre</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre..."
+                                data-toggle="tooltip" data-placement="top" title="Ingresa un nombre completo">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-3 col-form-label text-sm-right">Email</label>
+                            <div class="col-sm-9">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico"
+                            data-toggle="tooltip" data-placement="top" title="Ingresa un correo electrónico">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="mensaje" class="col-sm-3 col-form-label text-sm-right">Mensaje</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje..."
+                                data-toggle="tooltip" data-placement="top" title="Ingresa tu mensaje"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-9 offset-sm-3">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h3>Detalles de contacto</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Ratione dolorum, suscipit, animi repellat facere modi quae 
+                        perspiciatis ea mollitia, eos, sed cupiditate magni delectus. 
+                        Nam corporis iure tempore, officia impedit.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="piedepagina py-2" role="contentinfo">
+        <div class="container">
+            <p>2018 © NETWORK Todos los derechos reservados</p>
+            
+            <div class="redes-sociales">
+                <a href="http://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+                <a href="http://www.twitter.com" class="twitter"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+                <a href="http://www.github.com" class="github"><i class="fab fa-github-alt"></i><span>Github</span></a>
+                <a href="http://www.dribble.com" class="dribble"><i class="fab fa-dribbble"></i><span>Dribble</span></a>
+                <a href="http://pinterest.com" class="pinterest"><i class="fab fa-pinterest"></i><span>Pinterest</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <a data-scroll href="#encabezado" class="ir-arriba"><i class="fas fa-chevron-circle-up"></i></a>
+    
+    <!-- JQuery -->
+    <script src="asset/jquery-3.5.1.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="asset/bootstrap_4.5.3/js/bootstrap.min.js"></script>
+    <script src="asset/bootstrap_4.5.3/js/bootstrap.bundle.min.js"></script>
+    <!-- CUSTOM JS-->
+    <script src="js/wow.min.js"></script>
+    <!-- SMOOTH-SCROLL JS-->
+    <script src="js/smooth-scroll.min.js"></script>
+    <!-- CUSTOM JS-->
+    <script src="js/recursos.js"></script>
+    
+</body>
+</html>
