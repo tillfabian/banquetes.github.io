@@ -46,6 +46,13 @@ body{
             img{
                 width: 150px;
                 height: auto;
+                transition: all .4s ease;
+            }
+
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
             }
         }
 
@@ -493,9 +500,15 @@ body{
                 border-top: 0px !important;
                 border-bottom: 4px solid transparent;
                 transition: all .5s ease;
+
+                &:hover{
+                    color: $principal;
+                    border-bottom: 4px solid;
+                    transform: translateY(-10%);
+                }
             }
 
-            li.active a, li a:hover{
+            li.active a{
                 color: $principal;
                 border-bottom: 4px solid;
             }
