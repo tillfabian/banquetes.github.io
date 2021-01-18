@@ -20,7 +20,7 @@ body{
     background: linear-gradient(rgba(0, 0, 0,.5), rgba(0,0,0,.5)), url('../images/fondo-enacezado.jpg') no-repeat center top;
     color: #fff;
     background-size: cover;
-    background-attachment: fixed !important;
+    /*background-attachment: fixed !important;*/
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -204,7 +204,7 @@ body{
 .servicios{
     background: linear-gradient(rgba(0, 0, 0,.5), rgba(0,0,0,.5)), url('../images/servicios.jpg') no-repeat center center;
     background-size: cover;
-    background-attachment: fixed !important;
+    /*background-attachment: fixed !important;*/
     color: #fff;
 
     article{
@@ -321,6 +321,7 @@ body{
 
             i{
                 font-size: 1.7rem;
+                transition: all .2s ease;
             }
 
             span {
@@ -359,15 +360,21 @@ body{
         }
         
         .facebook:hover {
-            color: #4183d7; 
+            color: #3b5998;
+            i{
+                transform: scale(1.4);
+            }
         }
         
         .facebook span {
-            color: #4183d7;
+            color: #3b5998;
         }
         
         .twitter:hover {
             color: #19b5fe;
+            i{
+                transform: scale(1.4);
+            }
         }
         
         .twitter span {
@@ -376,6 +383,9 @@ body{
         
         .github:hover {
             color: #000;
+            i{
+                transform: scale(1.4);
+            }
         }
         
         .github span {
@@ -384,6 +394,9 @@ body{
         
         .dribble:hover {
             color: #f62459;
+            i{
+                transform: scale(1.4);
+            }
         }
         
         .dribble span {
@@ -392,7 +405,9 @@ body{
         
         .pinterest:hover {
             color: #f22613;
-            
+            i{
+                transform: scale(1.4);
+            }
         }
         
         .pinterest span {
@@ -668,12 +683,14 @@ body{
         .item-servicios{
             background: #fff;
             text-align: center;
-            border: 5px solid #055505;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
             border-radius: 5px;
             margin-bottom: 1rem;
             padding: 1rem;
             display: flex;
             flex-direction: column;
+            position: relative;
+            transition: all .5s ease;
 
             i{
                 font-size: 6rem;
@@ -696,6 +713,7 @@ body{
             }
 
             &:hover{
+                transform: scale(1.05);
                 i{
                     transform: rotateY(360deg);
                     transform-style: preserve-3d;
