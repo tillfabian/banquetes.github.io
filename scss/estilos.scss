@@ -732,7 +732,7 @@ body{
             }
 
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.05) translateY(-5%);
                 i{
                     transform: rotateY(360deg);
                     transform-style: preserve-3d;
